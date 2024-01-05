@@ -14,19 +14,17 @@
 
 @media (min-width: 700px) {
   .logo {
-    max-width: 20%;
-    width: 45%;
+    width: 300px;
+    height: 300px;
     position: relative;
     top: 70px;
     left: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
   }
 
   #index_text {
-    position: relative;
-    top: -10%;
-    left: 27%;
     margin-top: 0;
+    margin-left: 100px;
   }
 
   #index_text h1 {
@@ -39,6 +37,86 @@
   }
   .mappe_info {
     margin-bottom: 200px;
+  }
+
+  .index_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #portraet {
+    grid-column: 1/2;
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 10%;
+    left: 15%;
+  }
+
+  .cv_text {
+    grid-column: 1/2;
+    position: relative;
+    top: -72%;
+    left: 80%;
+    color: #c6342f;
+  }
+
+  .it_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 20px;
+  }
+
+  .it_logo {
+    width: 70px;
+    height: 70px;
+    gap: 15px;
+    margin: 30px 10px 60px 80px;
+  }
+
+  #kerne_text {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .kerne_hide {
+    display: block;
+  }
+
+  .kerne_kompetencer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+
+  .kerne {
+    padding: 10px;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .kerne h3 {
+    color: #c6342f;
+  }
+
+  .sprog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #sprog_h2 {
+    text-align: center;
+    margin-top: 40px;
   }
 }
 

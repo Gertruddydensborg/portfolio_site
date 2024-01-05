@@ -27,7 +27,7 @@
             <a href="index.html">
                 <img class="logo_header" src="assets/logo.svg" alt="logo">
             </a>
-            <nav>
+            <nav class="nav">
                 <a href="tema02.html">02</a>
                 <a href="tema03.html">03</a>
                 <a href="tema04.html">04</a>
@@ -52,117 +52,184 @@
 
     <main>
         <h1 class="title">Om mig</h1>
-        <h2 class="underrub">CV</h2>
         <section>
-            <div id="portraet">
-                <img src="assets/portraet.webp" alt="portræt af mig">
+            <div id="cv">
+                <div id="portraet">
+                    <img src="assets/portraet.webp" alt="portræt af mig">
+                </div>
+                <div class="cv_text">
+                    <h2> Gertrud Dydensborg
+                    </h2>
+                    <p>
+                        Jeg er en engageret multimediedesigner-studerende på KEA i København. Udover
+                        mine studier fungerer jeg som floor manager hos Madklubben Frederiksberg, hvor jeg leder et team
+                        af
+                        medarbejdere. Mit arbejde indebærer konflikthåndtering og at bevare overblikket i hektiske
+                        situationer. Med en baggrund i STX-uddannelsen bringer jeg en bred vifte af kompetencer,
+                        herunder
+                        ledelse og kreativ tænkning, til bordet.</p>
+                    <br>
+                    <p>
+                        Min store passion for grafisk arbejde og kreativ udfoldelse omfatter maleri, tegning og analog
+                        fotografi. Dette tilføjer en ekstra dimension til min tilgang til multimediedesign, hvor jeg
+                        søger
+                        at integrere min kreative flair i alle projekter.</p>
+                </div>
             </div>
-            <div>
-                <h2> Gertrud Dydensborg
-                </h2>
-                <p>
-                    Passioneret Multimediedesigner-studerende
-
-                    Jeg er Gertrud Dydensborg, en engageret multimediedesigner-studerende på KEA i København. Udover
-                    mine studier fungerer jeg som floor manager hos Madklubben Frederiksberg, hvor jeg leder et team af
-                    medarbejdere. Mit arbejde indebærer konflikthåndtering og at bevare overblikket i hektiske
-                    situationer. Med en baggrund i STX-uddannelsen bringer jeg en bred vifte af kompetencer, herunder
-                    ledelse og kreativ tænkning, til bordet.
-
-                    Min store passion for grafisk arbejde og kreativ udfoldelse omfatter maleri, tegning og analog
-                    fotografi. Dette tilføjer en ekstra dimension til min tilgang til multimediedesign, hvor jeg søger
-                    at integrere min kreative flair i alle projekter.</p>
-            </div>
-            <div>
-                <h2>Arbejdserfaring</h2>
+        </section>
+        <section>
+            <div class="arbejdserfaring">
+                <h2>Arbejdserfaring:</h2>
                 <ul>
-                    <li>Floor manager, Madklubben Frederiksberg</li>
-                    <p>Ledelse af medarbejderteam </p>
-                    <p> Konflikthåndtering og overblik</p>
-                    <li>Tjener og Butiksassistent, Lulu's Cafe og Boutique, Kerteminde</li>
-                    <p>Over 18 ansvarlig</p>
-                    <li>Medarbejder, Rekom Group</li>
-                    <p>Styring af SoMe for Rabalder Bar, Odense</p>
+                    <li>
+                        <h3>Floor manager, Madklubben Frederiksberg:</h3>
+                    </li>
+                    <p>Ledelse af medarbejderteam. </p>
+                    <p> Konflikthåndtering og overblik.</p>
+                    <li>
+                        <h3>Tjener og Butiksassistent, Lulu's Cafe og Boutique, Kerteminde:</h3>
+                    </li>
+                    <p>Over 18 ansvarlig.</p>
+                    <li>
+                        <h3>Medarbejder, Rekom Group:</h3>
+                    </li>
+                    <p>Styring af SoMe for Rabalder Bar, Odense.</p>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="om_text">
+            <div>
+                <h2>It-kompetencer</h2>
+                <p> Jeg er en erfaren bruger af Adobe-pakken, især Photoshop, Illustrator, Premiere Pro.
+                    Jeg har færdigheder i Figma for kreativ prototyping.
+                    Og godt kendskab til Visual Studio Code (VSCode) for webudvikling.
+                </p>
+            </div>
+
+            <div class="it_grid">
+                <div class="it_logo">
+                    <img src="assets/figma_logo.svg" alt="figma">
+                    <h3>Figma</h3>
+                </div>
+                <div class="it_logo">
+                    <img src="assets/vs_code_logo.svg" alt="vs code">
+                    <h3>Vs code</h3>
+                </div>
+                <div class="it_logo">
+                    <img src="assets/ps_logo.svg" alt="ps">
+                    <h3>Photoshop Adobe</h3>
+                </div>
+                <div class="it_logo">
+                    <img src="assets/au_logo.svg" alt="au">
+                    <h3>Audition Adobe</h3>
+                </div>
+                <div class="it_logo">
+                    <img src="assets/ai_logo.svg" alt="ai">
+                    <h3>Illustrator Adobe</h3>
+                </div>
+                <div class="it_logo">
+                    <img src="assets/pr_logo.svg" alt="Pr">
+                    <h3>Premiere Pro Adobe</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="kerne_hide">
+                <div id="kerne_text">
+                    <h2>Kerne kompetencer</h2>
+                </div>
+                <div class="kerne_kompetencer">
+                    <div class="kerne">
+                        <h3>Multimediedesign:</h3>
+                        <p>Kreativ design og layout.</p>
+
+                        <p>Grafisk produktion og redigering.</p>
+                    </div>
+                    <div class="kerne">
+                        <h3>Ledelse og teamarbejde:</h3>
+                        <p>Erfaring med ledelse af <br> medarbejderteam som floor manager.</p>
+
+                        <p>Evne til at motivere og organisere <br> teamet.</p>
+
+                        <p>Effektiv kommunikation og samarbejde.</p>
+                    </div>
+                    <div class="kerne">
+                        <h3>Konflikthåndtering:</h3>
+                        <p>Evne til at håndtere konflikter professionelt.</p>
+
+                        <p>Skabe og opretholde et positivt arbejdsmiljø.</p>
+                    </div>
+                    <div class="kerne">
+                        <h3>Overblik og Organisering:</h3>
+                        <p>Evne til at bevare overblik i travle situationer.</p>
+
+                        <p>Effektiv planlægning og organisering af opgaver.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="arbejdserfaring">
+                <div class="om_text">
+                    <h2>Uddannelse:</h2>
+                </div>
+                <ul>
+                    <li>
+                        <h3>Studerende på KEA, København, Multimediedesign.</h3>
+                    </li>
+                    <p>2023-2025</p>
+                    <li>
+                        <h3>Grundtvigs Højskole.</h3>
+                    </li>
+                    <p>Efteråret 2022</p>
+
+                    <li>
+                        <h3>STX-uddannelse på Mulernes Legatskole, Odense, Samfundsfag/Engelsk linje.</h3>
+                    </li>
+                    <p>2018-2021</p>
+
+                    <li>
+                        <h3>Oure Efterskole.</h3>
+                    </li>
+                    <p>2017-2018</p>
+                    <li>
+                        <h3>Kertemindeegens Friskole, Kerteminde.</h3>
+                    </li>
+                    <p>2007-2017</p>
                 </ul>
             </div>
         </section>
+        <section>
+            <div>
+                <h2 id="sprog_h2">Sprog</h2>
+            </div>
+            <div class="sprog">
+                <div>
+                    <h3>Dansk</h3>
+                    <div class="sprog_billede"><img src="assets/dansk_sprog.svg" alt="dansk"></div>
+                </div>
+                <div>
+                    <h3>Engelsk</h3>
+                    <div class="sprog_billede"><img src="assets/engelsk_sprog.svg" alt="engelsk"></div>
+                </div>
+                <div>
+                    <h3>Spansk</h3>
+                    <div class="sprog_billede"><img src="assets/spansk_sprog.svg" alt="spansk"></div>
+                </div>
+            </div>
+        </section>
 
-        <section>
-            <div>
-                <h2>Kerne kompetencer</h2>
-                <ul>
-                    <h3>Multimediedesign:</h3>
-                    <li>Kreativ design og layout</li>
-                    <li>Grafisk produktion og redigering</li>
-                    <h3>Ledelse og teamarbejde:</h3>
-                    <li>Erfaring med ledelse af medarbejderteam som floor manager</li>
-                    <li>Evne til at motivere og organisere teamet</li>
-                    <li>Effektiv kommunikation og samarbejde</li>
-                    <h3>Konflikthåndtering:</h3>
-                    <li>Evne til at håndtere konflikter professionelt</li>
-                    <li>Skabe og opretholde et positivt arbejdsmiljø</li>
-                    <h3>Overblik og Organisering:</h3>
-                    <li>Evne til at bevare overblik i travle situationer</li>
-                    <li>Effektiv planlægning og organisering af opgaver</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>It-kompetencer</h2>
-            <p> Jeg er en erfaren bruger af Adobe-pakken, især Photoshop, Illustrator, Premiere Pro.
-                Jeg har færdigheder i Figma for kreativ prototyping.
-                Og godt kendskab til Visual Studio Code (VSCode) for webudvikling.
-            </p>
-            <div class="billede">
-                <img src="assets/figma_logo.svg" alt="figma">
-                <h3>Figma</h3>
-            </div>
-            <div class="billede">
-                <img src="assets/vs_code_logo.svg" alt="vs code">
-                <h3>Vs code</h3>
-            </div>
-            <div class="billede">
-                <img src="assets/ps_logo.svg" alt="ps">
-                <h3>Photoshop Adobe</h3>
-            </div>
-            <div class="billede">
-                <img src="assets/au_logo.svg" alt="au">
-                <h3>Audition Adobe</h3>
-            </div>
-            <div class="billede">
-                <img src="assets/ai_logo.svg" alt="ai">
-                <h3>Illustrator Adobe</h3>
-            </div>
-            <div class="billede">
-                <img src="assets/pr_logo.svg" alt="Pr">
-                <h3>Premiere Pro Adobe</h3>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Uddannelse:</h2>
-            </div>
-            <ul>
-                <li>Studerende på KEA, København, Multimediedesign.</li>
-                <li>Grundtvigs Højskole, efteråret 2022.</li>
-                <li>STX-uddannelse på Mulernes Legatskole, Odense, Samfundsfag/Engelsk linje, 2018-2021.</li>
-                <li>Oure Efterskole, 2017-2018.</li>
-                <li>Kertemindeegens Friskole, 2007-2017</li>
-            </ul>
-            <ol>
-                <li>Dansk</li>
-                <div class="sprog_billede"><img src="assets/dansk_sprog.svg" alt="dansk"></div>
-                <li>Engelsk</li>
-                <div class="sprog_billede"><img src="assets/engelsk_sprog.svg" alt="engelsk"></div>
-                <li>Spansk</li>
-                <div class="sprog_billede"><img src="assets/spansk_sprog.svg" alt="spansk"></div>
-            </ol>
-        </section>
 
 
 
     </main>
-
+    <hr>
     <footer>
         <div class="flex_footer">
             <a href="index.html">
