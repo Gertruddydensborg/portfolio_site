@@ -230,54 +230,23 @@ li a:hover {
 /* tema 02 */
 
 .knap {
-  border: solid 1px black;
+  border: solid 2px black;
   padding: 8px;
   font-size: 16px;
-  color: whitesmoke;
-  margin-left: 10%;
-}
-
-.knap a {
-  text-decoration: none;
-  text-align: center;
   color: black;
-}
-
-/* .ga_til_side {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.ga_til_side {
-  background-color: #b3b7b3;
-}
-
-.ga_til_side p {
-  font-size: 14px;
-  text-align: center;
-  padding: 2px;
-  margin-top: 7px;
-  margin-bottom: 20px;
-}
-
-.knap a {
-  background-color: #c6342f;
-  border: solid 1px #c6342f;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 20px;
-  color: whitesmoke;
+  cursor: pointer;
   text-decoration: none;
   text-align: center;
-  margin-left: 10%;
+  font-family: open sans;
+  font-weight: bolder;
+  margin: 50px 30px 20px 50px;
+  background-color: #f7f2f0;
 }
 
-.knap {
-  cursor: pointer;
-} */
+.knap:hover {
+  color: white;
+  background-color: #221b20;
+}
 
 #studiestartsproven img {
   position: relative;
@@ -488,13 +457,13 @@ li a:hover {
     transform: scale(0.9);
   }
 }
-*/
-
 
 /*om*/
 
-#portraet img {
+#portraet {
   width: 30%;
+  position: relative;
+  right: -60%;
 }
 
 .cv_text {
@@ -558,6 +527,7 @@ li a:hover {
 .it_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background-color: #8c8995;
 }
 
 .it_logo {
