@@ -12,7 +12,7 @@ img {
 }
 
 body {
-  background-color: #f7f2f0;
+  background-color: #221b20;
 }
 
 h1 {
@@ -33,6 +33,9 @@ h3 {
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
+  line-height: 1.5;
+  padding: 10px;
+  color: white;
 }
 
 /*Header*/
@@ -126,7 +129,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: rgb(247, 242, 240);
+  background-color: #221b20;
 
   .container {
     display: flex;
@@ -152,7 +155,7 @@ header {
   font-family: open sans;
   font-weight: lighter;
   margin: 10px;
-  color: black;
+  color: white;
 }
 
 .nav a:hover {
@@ -229,8 +232,13 @@ li a:hover {
 
 /* tema 02 */
 
+.knapcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .knap {
-  border: solid 2px black;
+  border: solid 2px white;
   padding: 8px;
   font-size: 16px;
   color: black;
@@ -239,8 +247,19 @@ li a:hover {
   text-align: center;
   font-family: open sans;
   font-weight: bolder;
-  margin: 50px 30px 20px 50px;
+  width: 15%;
   background-color: #f7f2f0;
+}
+
+.knap_midt {
+  width: 15%;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.knap_midt p {
+  margin-top: 10px;
 }
 
 .knap:hover {
@@ -250,18 +269,19 @@ li a:hover {
 
 #studiestartsproven img {
   position: relative;
-  right: -34%;
+  right: -40%;
   margin-top: 50px;
 }
 
 #studiestartsproven img {
-  width: 60%;
+  width: 50%;
 }
 
 .title {
   margin-top: 20px;
   margin-left: 10px;
   font-size: 45px;
+  color: white;
 }
 
 .underrub {
@@ -270,38 +290,27 @@ li a:hover {
   color: #c6342f;
 }
 
-.studiestartsproven_text {
-  margin: 15px;
-  padding: 5px;
-  font-size: 16px;
-}
-
-.studiestartsproven_text h1 {
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-
-.redskaber {
-  background-color: #5e503f;
-  color: whitesmoke;
-  padding: 10px;
-  padding: 10px;
-}
-.redskaber h2 {
-  text-align: center;
-  font-weight: lighter;
-  margin-bottom: 5px;
-  margin-top: 10px;
-}
-
-.redskaber h3 {
+.opgavebeskrivelse_02 h2 {
+  margin-left: 25px;
   margin-top: 20px;
-  margin-bottom: 5px;
+  color: white;
 }
 
-.wireframes_02_text {
+.opgavebeskrivelse_02 p {
+  margin-left: 15px;
+  margin-top: 8px;
+  color: white;
+  font-family: open sans;
+  font-weight: lighter;
+  color: white;
+  line-height: 1.8;
+}
+
+.wireframes_02_text,
+h3 {
   margin-left: 10px;
   margin-top: 20px;
+  color: white;
 }
 
 .wireframes_02_text p {
@@ -347,7 +356,8 @@ li a:hover {
 
 #styletile_02 h2 {
   margin-left: 10px;
-  margin-top: 70px;
+  margin-top: 40px;
+  color: white;
 }
 
 #styletile_02 p {
@@ -356,20 +366,40 @@ li a:hover {
   margin-bottom: 10px;
 }
 
-/* #styletile_02_img {
+#styletile_02_img {
   width: 95%;
   margin-left: 10px;
-} */
-
-/*index*/
-
-.index_background {
-  background-color: #221b20;
 }
 
-.index_header a {
+.grid_02,
+.flex_02 h2,
+p {
   color: white;
 }
+
+.grid_brug1 img {
+  width: 92%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.grid_brug2 img {
+  width: 92%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.gridogflex_brug {
+  align-items: center;
+}
+
+#flex_02_img img {
+  width: 92%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/*index*/
 
 .logo {
   width: 180px;
@@ -469,7 +499,7 @@ li a:hover {
 .cv_text {
   margin: 20px;
   padding: 7px;
-  line-height: 1.5;
+  color: white;
 }
 
 .arbejdserfaring,
@@ -511,6 +541,7 @@ li a:hover {
   margin-top: 15px;
   font-weight: lighter;
   margin-left: 15px;
+  color: white;
 }
 
 .sprog_billede {
@@ -522,6 +553,7 @@ li a:hover {
 #sprog_h2 {
   margin-left: 10px;
   margin-top: 30px;
+  color: white;
 }
 
 .it_grid {
@@ -546,13 +578,131 @@ li a:hover {
 .om_text h2 {
   margin-left: 10px;
   margin: 30px 10px 8px 10px;
+  color: white;
 }
 
 .om_text p {
-  padding: 10px;
-  line-height: 1.5;
+  color: white;
 }
 
 .kerne_hide {
   display: none;
+  color: white;
+}
+
+/*03*/
+
+.opgavebeskrivelse h2 {
+  margin-left: 35px;
+  margin-top: 130px;
+  color: white;
+}
+
+.opgavebeskrivelse p {
+  margin-left: 35px;
+  margin-top: 8px;
+  color: white;
+  font-family: open sans;
+  font-weight: lighter;
+  color: white;
+  line-height: 1.8;
+}
+
+.kompas_container {
+  width: 30%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 65%;
+  top: 30%;
+}
+
+.kompas_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/kompas.svg);
+  background-size: cover;
+}
+
+.pil_container {
+  width: 50%;
+  aspect-ratio: 213/57.85;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pil_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/pil.svg);
+  background-size: cover;
+}
+
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation_kf {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about {
+  margin-right: 10px;
+}
+
+.ide_prototype_text h2 {
+  color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.research {
+  color: white;
+}
+
+.research h2 {
+  margin: 20px 10px 10px 10px;
+}
+
+.research h3 {
+  margin-left: 10px;
+  margin-top: 6px;
+  color: #ffd447;
+}
+
+.research p {
+  margin-left: 12px;
+}
+
+.design_03 {
+  color: white;
+}
+
+.styletile {
+  width: 450px;
+  margin: 15px;
+}
+
+.design_03 h3,
+h2 {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.design_03 p {
+  margin-left: 10px;
 }

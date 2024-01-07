@@ -37,6 +37,60 @@
   }
 }
 
+@media (min-width: 670px) {
+  .kompas_container {
+    width: 20%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+  }
+
+  .kompas_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(assets/kompas.svg);
+    background-size: cover;
+  }
+
+  .pil_container {
+    width: 50%;
+    aspect-ratio: 213/57.85;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pil_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/pil.svg);
+    background-size: cover;
+  }
+
+  .grid_intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .opgavebeskrivelse {
+    order: -1;
+  }
+
+  .opgavebeskrivelse_02 {
+    order: -1;
+  }
+
+  .about {
+    order: -1;
+    margin-top: 150px;
+  }
+}
+
 @media (min-width: 700px) {
   .logo {
     width: 300px;
@@ -88,7 +142,6 @@
     position: relative;
     top: -72%;
     left: 6%;
-    color: #c6342f;
     margin-top: 150px;
   }
 
@@ -107,6 +160,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 100px;
+    color: white;
   }
 
   .kerne {
@@ -114,31 +168,63 @@
     line-height: 1.5;
     margin-left: 20px;
     margin-right: 20px;
+    color: white;
   }
 
   .kerne h3 {
     color: #c6342f;
   }
-}
 
-/* 
+  /* 
+  #studiestartsproven img {
+    position: relative;
+    top: -10%;
+    margin-top: 50px;
+    right: -25%;
+  }*/
 
+  #studiestartsproven img {
+    width: 50%;
+  }
+
+  .wireframes_02_text {
+    margin-top: 100px;
+  }
   .wireframes_tema02 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
   }
 
-  .billede1,
+  .wirefram_grid {
+    display: contents;
+    /* gap: 20px; */
+  }
+
+  .billede1 {
+    width: 150%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
   .billede2 {
-    width: 100%;
-    margin-left: 40px;
+    width: 157%;
     margin-top: 10px;
+    margin-left: 10px;
   }
 
-  .billede3,
-  .billede4 {
-    width: 100%;
+  .billede3 {
+    width: 35%;
     margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .billede4 {
+    width: 33%;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
   #title_02 {
@@ -154,44 +240,66 @@
     font-size: 35px;
   }
 
-  #studieproven {
+  #styletile_02 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+  }
+
+  #styletile_02 h2 {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  #styletile_02 p {
+    margin-left: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  #styletile_02_img {
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 0;
+    order: -1;
+  }
+
+  .grid_brug {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  #studiestartsproven img {
-    width: 70%;
-    order: 1;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    position: relative;
-    right: -25%;
+  .grid_brug p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
   }
 
-  .studiestartsproven_text {
-    order: -1;
-    margin-top: 90px;
-    margin-bottom: 50px;
+  .grid_brug1 {
+    margin-top: 0;
   }
 
-  .redskaber {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px;
-    row-gap: 10px;
-    justify-content: space-around;
+  .grid_brug2 {
+    margin-left: 0;
+    margin-top: 0;
+    margin-top: 10px;
   }
 
-  .redskab_title {
-    position: absolute;
-  } */
+  #flex_02_img {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+}
 
-/* @media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
   .logo {
     width: 50%;
     height: 50%;
     top: 10%;
     left: 10%;
   }
-} */
+}
