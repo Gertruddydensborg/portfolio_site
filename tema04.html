@@ -48,29 +48,157 @@
     <main>
         <h1 class="title">04</h1>
         <h2 class="underrub">Grundlæggende animation</h2>
+        <div class="opgavebeskrivelse">
+            <h2> About: </h2>
+            <p> I dette tema blev jeg introduceret til javascript og css-animation. Projektet i dette forløb var, at
+                jeg skulle designe og kode et spil, med bruget af html, csss og javascript, samt designe et website
+                som viste min designproces.
+                Jeg fandt dette projekt særdeles udfordrende, både på det visulle men især at lære javascript, da
+                det var en helt ny form for kodning, og derfor mange nye regeler samt elementer at holde styr på.
+                Det var også i dette projekt, at jeg følte jeg videreudviklede på mine kompetencer indenfor kode, da
+                man her kunne se og forstår flere aspekter for webdesign, hvilket kan bidrage til mere komplekse
+                webdesignes.
+            </p>
+        </div>
+
         <section>
-            <div class="opgavebeskrivelse">
-                <h2> About: </h2>
-                <p> I dette tema fik jeg en grundlæggende forståelse for samspillet mellem brugere og
-                    brugergrænseflader. Jeg udviklede en lokalguide til København NV med formålet at hjælpe unge med
-                    at
-                    finde gode spisesteder, kulturoplevelser og natur i området. For at målrette brugergrænsefladen
-                    til
-                    unge brugte
-                    jeg værktøjer, teorier og metoder fra undervisning til research, design og test i min digitale
-                    produktudviklingsproces.
+            <div class="ide_prototype_text">
+                <h2>Designet af mit spil</h2>
+            </div>
+            <div>
+                <h3>Ide</h3>
+                <p> Et af kriterierne for spillet var, at det skulle tage udgangspunkt i gode og onde elementer. Dette
+                    ledte mig til konceptet "Plate Pursuit", hvor en tjenerfigur skal samle gode elementer i form af
+                    tomme tallerkener og undgå de onde elementer. Efter at have identificeret spilelementerne, udviklede
+                    jeg skitser af restauranten, der skulle danne rammen om spiluniverset.
+                </p>
+            </div>
+            <div>
+                <h3>Plate Pursuit</h3>
+                <p>
+                    Sådan spilles "Plate Pursuit": Hjælp tjeneren med at indsamle beskidte tallerkener fra gæsterne i
+                    restauranten inden tiden udløber. Pas på ikke at indsamle fyldte tallerkner, da det resulterer i tab
+                    af et liv og et point. Målet er at indsamle 10 tomme tallerkner for at vinde spillet.
+                </p>
+
+
+            </div>
+
+            <div>
+                <h3>Valg af stil</h3>
+                <p>Jeg valgte at benytte designstilen "flat design" til mit spil, hvor man gør brug af enkelhed og
+                    flade,
+                    todimensionelle elementer. Jeg blev meget inspireret af stilen fra 1920'erne og specifikt
+                    art deco stilen, hvilket er den røde tråd gennem hele webdesignet samt spildesignet, fra valg
+                    af font, farvepalette og spilelementer.
+                    I spilscenen ønskede jeg at inkorporere genkendelige elementer fra 1920'ernes indretning og stil,
+                    såsom
+                    en lysekrone og røde gardiner, der også afspejles i tjeneruniformen.
                 </p>
             </div>
 
+            <div>
+                <h3>Figure</h3>
+                <img src="assets/god_mand.webp" alt="">
+                <img src="assets/tabt_mand.svg" alt="">
+            </div>
+
+            <div>
+                <h3>spilelementer</h3>
+                <img src="assets/god.svg" alt="God element">
+                <img src="assets/darlig.svg" alt="Dårlig element">
+            </div>
+
+            <div>
+                <img src="assets/Styletile.webp" alt="styletile til spil">
+            </div>
+
+            <div>
+                <h3>De forskellige spilscener</h3>
+                <div>
+                    <img src="assets/baggrund.webp" alt="Start skærm til spil">
+                    <h4>Baggrundskærm</h4>
+
+                </div>
+                <div>
+                    <img src="assets/level_complete.webp" alt="Level complete skærm til spil">
+                    <h4>Level complete</h4>
+                </div>
+
+                <div>
+                    <img src="assets/game_over_screen.webp" alt="Game over skærm til spil">
+                    <h4>Game over </h4>
+                </div>
+            </div>
         </section>
+
+        <section>
+            <div class="ide_prototype_text">
+                <h2>Kodning af mit spil</h2>
+            </div>
+            <div>
+                <h3>Aktivitetsdiagram</h3>
+
+                <img src="assets/aktivitetsdiagram.drawio.webp" alt="Aktivitetsdiagram">
+                <p> Mit aktivitetsdiagram bruges til at visualisere spillets forløb af aktivtiter og udfald.
+
+
+                    Tjenerkarakteren skal indsamle beskidte tallerkener fra gæsterne. Der falder tomme tallerkener (gode
+                    ting) og tallerkener med mad på (onde ting). Spillet vare 20 sekunder, man skal have 10 point for at
+                    vinde og hvis man mister sine 3 liv slutter spillet og man taber. Hvis man klikker på en tallerken
+                    med mad på, forsvinder den (lyden af en sur mand). Hvis man klikker på en tom tallerken, roterer den
+                    rundt (en glad lyd som jubi).
+
+                    På denne måde hjælper aktivitetsdiagrammet med at give både designere og udviklere en klar
+                    forståelse af, hvordan spilaktiviteterne er struktureret, og hvordan de forskellige elementer i
+                    spillet interagerer med hinanden. Det letter planlægning, design og implementering af spillet ved at
+                    skabe en visuel repræsentation af spilprocessen.
+
+
+
+
+
+                </p>
+            </div>
+            <div>
+                <h3>State Machine Diagram</h3>
+
+                <img src="assets/state_machine_diagram.webp" alt="State Machine diagram">
+                <p>Mit State Machine diagram visualiserer, ligesom mit aktivitetsdiagram, spillets proces og
+                    illustrerer, hvilke javascriptfunktioner der gør sig gældende i mit spil, og de forskellige forløb
+                    samt funktioner, der forekommer gennem spillet, hvis man klikker på enten god/dårlig ting, samt
+                    udfaldet af spillet, herunder game over/level complete. State Machine Diagrammet var en stor hjælp
+                    for mig, da jeg skulle kode spillet. Det var en hjælpemiddel til at holde overblikket over mine
+                    javascriptfunktioner og om de forskellige overgangsscenarier.
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="knapcontainer">
             <div class="knap_midt">
 
-                <a class="knap" href="https://gertruddydensborg.dk/kea/02_web/01_website/website/">Gå
+                <a class="knap" href="https://gertruddydensborg.dk/kea/04_animation/website/index.html">Gå
                     til siden</a>
                 <p>Klik på linket for at se færdigt produkt.</p>
             </div>
-
         </div>
     </main>
     <hr>
