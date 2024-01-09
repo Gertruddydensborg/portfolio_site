@@ -225,11 +225,21 @@ li a:hover {
   font-weight: lighter;
   margin-left: 30px;
   margin-right: 7px;
+  color: black;
+}
+
+.kontakt h3 {
+  color: black;
 }
 
 .kontakt_text {
   font-size: 16px;
   margin-top: 10px;
+  color: black;
+}
+
+.kontakt_text p {
+  color: black;
 }
 
 .farvet_ord {
@@ -263,7 +273,7 @@ li a:hover {
   text-align: center;
 }
 .knap_midt p {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .knap:hover {
@@ -283,7 +293,7 @@ li a:hover {
 
 .title {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 45px;
   color: white;
 }
@@ -300,7 +310,15 @@ li a:hover {
   color: white;
 }
 
-.opgavebeskrivelse_02 p {
+.opgavebeskrivelse_rnd h2 {
+  margin-left: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+.opgavebeskrivelse,
+.opgavebeskrivelse_02,
+.opgavebeskrivelse_rnd p {
   margin-left: 15px;
   margin-top: 8px;
   color: white;
@@ -312,7 +330,6 @@ li a:hover {
 
 .wireframes_02_text,
 h3 {
-  margin-left: 10px;
   margin-top: 20px;
   color: white;
 }
@@ -435,7 +452,6 @@ p {
 
 #index_text h1 {
   margin-bottom: 10px;
-  margin-left: 20px;
 }
 
 .index_mappe {
@@ -606,11 +622,17 @@ p {
 
 .opgavebeskrivelse h2 {
   margin-left: 35px;
+  margin-top: 70px;
+  color: white;
+}
+
+.opgavebeskrivelse_03 h2 {
+  margin-left: 35px;
   margin-top: 130px;
   color: white;
 }
 
-.opgavebeskrivelse p {
+.opgavebeskrivelse_03 p {
   margin-left: 35px;
   margin-top: 8px;
   color: white;
@@ -618,6 +640,23 @@ p {
   font-weight: lighter;
   color: white;
   line-height: 1.8;
+}
+
+/* .opgavebeskrivelse p {
+  margin-left: 35px;
+  margin-top: 8px;
+  color: white;
+  font-family: open sans;
+  font-weight: lighter;
+  color: white;
+  line-height: 1.8;
+} */
+
+.logornd {
+  width: 30%;
+  position: relative;
+  left: 65%;
+  top: 30%;
 }
 
 .kompas_container {
@@ -727,6 +766,7 @@ p {
 .mappe_grid_05 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 35px;
 }
 
 #about_05 {
@@ -748,15 +788,20 @@ p {
 
 .billede1_niceboi {
   grid-column: 1;
-  width: 92%;
+  width: 100%;
 }
 
-.billede3_niceboi,
+.billede4_niceboi {
+  grid-column: 2;
+  width: 100%;
+}
+
+/* .billede3_niceboi,
 .billede2_niceboi {
   grid-column: 2;
   gap: 50px;
   width: 100%;
-}
+} */
 
 .video_pc {
   display: flex;
@@ -766,4 +811,20 @@ p {
   width: 100%;
 }
 
+.video_youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  width: 100%;
+  object-fit: cover;
+}
+
 /*redesign*/
+
+/*04*/
+
+.figur_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

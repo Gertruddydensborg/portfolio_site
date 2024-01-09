@@ -78,6 +78,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .opgavebeskrivelse_03 {
+    order: -1;
+  }
+
   .opgavebeskrivelse {
     order: -1;
   }
@@ -94,6 +98,17 @@
 }
 
 @media (min-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
   .logo {
     width: 300px;
     height: 300px;
@@ -296,8 +311,13 @@
   }
 
   .grid_05_videosite {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .grid_05_videosite {
     gap: 30px;
     margin: 30px 50px 50px 50px;
   }
@@ -307,20 +327,25 @@
   }
 
   .billede1_niceboi {
-    width: 40%;
-    margin-left: 100px;
+    grid-column: 1;
+    grid-row-end: span 2;
+    width: 100%;
+  }
+
+  .billede4_niceboi {
+    grid-column: 2;
+    grid-row-end: span 2;
+    width: 100%;
   }
 
   .billede3_niceboi,
   .billede2_niceboi {
-    gap: 50px;
-    width: 42%;
+    gap: 20px;
+    width: 105%;
   }
 
-  .billede3_niceboi {
-    position: relative;
-    top: -50%;
-    left: 45%;
+  .billede2_niceboi {
+    margin-bottom: 9px;
   }
 
   .mappe_grid_05 {
@@ -328,7 +353,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 100px;
+    margin-top: 50px;
   }
 
   .billede_05 {
@@ -338,6 +364,17 @@
 
   .index_p {
     margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* .figur_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  } */
+
+  .figur_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
