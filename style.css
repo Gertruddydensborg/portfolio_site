@@ -18,12 +18,18 @@ body {
 h1 {
   font-family: open sans;
   font-weight: lighter;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h2 {
   font-family: open sans;
   font-weight: lighter;
   font-size: 24px;
+  color: white;
 }
 
 h3 {
@@ -252,8 +258,6 @@ li a:hover {
 }
 
 .knap_midt {
-  width: 15%;
-
   margin-bottom: 50px;
   margin-top: 50px;
   text-align: center;
@@ -455,6 +459,14 @@ p {
   margin-top: 10px;
 }
 
+.billede h2 {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .billede img.image_hover {
   position: absolute;
   top: 0;
@@ -546,8 +558,8 @@ p {
 
 .sprog_billede {
   width: 280px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin: 10px 30px 20px 10px;
+  filter: invert(1);
 }
 
 #sprog_h2 {
@@ -697,8 +709,12 @@ p {
   margin: 15px;
 }
 
-.design_03 h3,
-h2 {
+.design_03 h3 {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.design_03 h2 {
   margin-left: 10px;
   margin-top: 20px;
 }
@@ -706,3 +722,48 @@ h2 {
 .design_03 p {
   margin-left: 10px;
 }
+
+/*05*/
+.mappe_grid_05 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#about_05 {
+  margin-top: 50px;
+}
+
+/*videosite*/
+
+.grid_05_videosite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 30px 15px 50px 15px;
+}
+
+.oneniceboi_billed {
+  margin-bottom: 10px;
+}
+
+.billede1_niceboi {
+  grid-column: 1;
+  width: 92%;
+}
+
+.billede3_niceboi,
+.billede2_niceboi {
+  grid-column: 2;
+  gap: 50px;
+  width: 100%;
+}
+
+.video_pc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  width: 100%;
+}
+
+/*redesign*/
