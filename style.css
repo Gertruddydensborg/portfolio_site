@@ -34,12 +34,20 @@ h2 {
 
 h3 {
   font-family: open sans;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #ffd447;
+}
+
+h4 {
+  color: white;
+  font-family: open sans;
+  font-weight: lighter;
 }
 
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
-  line-height: 1.5;
   padding: 10px;
   color: white;
 }
@@ -61,10 +69,25 @@ p {
   outline: none;
   border: none;
   z-index: 100;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
-.hamburger .bar,
+.bar {
+  height: 5px;
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background-color: #8c8995;
+  outline: none;
+  border: none;
+  z-index: 50;
+  margin: 20px 0 0 20px;
+  transition: 0s;
+  border-radius: 5px;
+}
+
 .hamburger:after,
 .hamburger:before {
   content: "";
@@ -78,11 +101,11 @@ p {
 }
 
 .hamburger.is-active:before {
-  transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(0px, 0px);
 }
 
 .hamburger.is-active:after {
-  transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-7px, -8px);
 }
 
 .hamburger.is-active .bar {
@@ -152,7 +175,7 @@ header {
 }
 
 .nav {
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -305,7 +328,6 @@ li a:hover {
 }
 
 .opgavebeskrivelse_02 h2 {
-  margin-left: 25px;
   margin-top: 20px;
   color: white;
 }
@@ -328,10 +350,8 @@ li a:hover {
   line-height: 1.8;
 }
 
-.wireframes_02_text,
-h3 {
+.wireframes_02_text {
   margin-top: 20px;
-  color: white;
 }
 
 .wireframes_02_text p {
@@ -368,9 +388,9 @@ h3 {
   grid-template-columns: 1fr 1fr;
 }
 
-.wireframes_tema02 h3 {
+.wireframes_tema02 h4 {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -533,8 +553,11 @@ p {
 .arbejdserfaring,
 .text {
   background-color: #3d4052;
+  margin-left: -60px;
+  margin-right: -60px;
+
   color: white;
-  padding: 10px;
+  padding: 70px;
 }
 
 .arbejdserfaring h2 {
@@ -621,7 +644,7 @@ p {
 /*03*/
 
 .opgavebeskrivelse h2 {
-  margin-left: 35px;
+  margin-left: 25px;
   margin-top: 70px;
   color: white;
 }
@@ -796,30 +819,23 @@ p {
   width: 100%;
 }
 
-/* .billede3_niceboi,
-.billede2_niceboi {
-  grid-column: 2;
-  gap: 50px;
-  width: 100%;
-} */
+.interview_05 h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.h3_text {
+  margin-left: 25px;
+  margin-top: 20px;
+}
 
 .video_pc {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 30px;
+  margin: 0px;
   width: 100%;
 }
-
-.video_youtube {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 30px;
-  width: 100%;
-  object-fit: cover;
-}
-
 /*redesign*/
 
 /*04*/
@@ -827,4 +843,67 @@ p {
 .figur_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: end;
+  justify-items: center;
+  gap: 30px;
+  background-color: #3d4052;
+  margin-left: 0;
+  padding: 10px;
+}
+
+#figurer_text {
+  grid-row-start: 1;
+  justify-self: start;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+#elementer_text {
+  grid-row-start: 3;
+  justify-self: start;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  justify-self: center;
+}
+
+.figurer_billede {
+  grid-row-start: 2;
+  width: 70%;
+}
+
+.elementer_billede {
+  grid-row-start: 4;
+  align-self: center;
+  width: 70%;
+}
+
+.grid_skaerm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  margin-bottom: 25px;
+}
+
+.grid_skaerm h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.grid_skaerm img {
+  justify-self: center;
+}
+
+.diagram {
+  background-color: #3d4052;
+}
+
+.diagram img {
+  width: 90%;
+  justify-self: center;
 }

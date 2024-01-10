@@ -31,9 +31,10 @@
                 <a href="tema05.html">05</a>
                 <a href="om.html">Om mig</a>
             </nav>
-            <button class="hamburger">
+            <div class="hamdiv">
                 <div class="bar"></div>
-            </button>
+                <button class="hamburger"></button>
+            </div>
         </div>
         <nav class="mobile-nav">
             <a href="index.html">Forside</a>
@@ -47,28 +48,35 @@
 
 
 
+
     <main>
         <h1 class="title">04</h1>
         <h2 class="underrub">Grundlæggende animation</h2>
-        <div class="opgavebeskrivelse">
-            <h2> About: </h2>
-            <p> I dette tema blev jeg introduceret til javascript og css-animation. Projektet i dette forløb var, at
-                jeg skulle designe og kode et spil, med bruget af html, csss og javascript, samt designe et website
-                som viste min designproces.
-                Jeg fandt dette projekt særdeles udfordrende, både på det visulle men især at lære javascript, da
-                det var en helt ny form for kodning, og derfor mange nye regeler samt elementer at holde styr på.
-                Det var også i dette projekt, at jeg følte jeg videreudviklede på mine kompetencer indenfor kode, da
-                man her kunne se og forstår flere aspekter for webdesign, hvilket kan bidrage til mere komplekse
-                webdesignes.
-            </p>
+        <div class="grid_intro">
+            <div class="opgavebeskrivelse">
+                <h2> About: </h2>
+                <p> I dette tema blev jeg introduceret til javascript og css-animation. Projektet i dette forløb var, at
+                    jeg skulle designe og kode et spil, med bruget af html, csss og javascript, samt designe et website
+                    som viste min designproces.
+                    Jeg fandt dette projekt særdeles udfordrende, både på det visulle men især at lære javascript, da
+                    det var en helt ny form for kodning, og derfor mange nye regeler samt elementer at holde styr på.
+                    Det var også i dette projekt, at jeg følte jeg videreudviklede på mine kompetencer indenfor kode, da
+                    man her kunne se og forstår flere aspekter for webdesign, hvilket kan bidrage til mere komplekse
+                    webdesignes.
+                </p>
+            </div>
+
         </div>
+
+
+
 
         <section>
             <div class="ide_prototype_text">
                 <h2>Designet af mit spil</h2>
             </div>
             <div>
-                <h3>Ide</h3>
+                <h3 class="h3_text">Ide</h3>
                 <p> Et af kriterierne for spillet var, at det skulle tage udgangspunkt i gode og onde elementer. Dette
                     ledte mig til konceptet "Plate Pursuit", hvor en tjenerfigur skal samle gode elementer i form af
                     tomme tallerkener og undgå de onde elementer som er fyldte tallerkener. Efter at have identificeret
@@ -77,18 +85,31 @@
                 </p>
             </div>
             <div>
-                <h3>Plate Pursuit</h3>
+                <h3 class="h3_text">Plate Pursuit</h3>
                 <p>
                     Sådan spilles "Plate Pursuit": Hjælp tjeneren med at indsamle beskidte tallerkener fra gæsterne i
                     restauranten inden tiden udløber. Pas på ikke at indsamle fyldte tallerkner, da det resulterer i tab
                     af et liv og et point. Målet er at indsamle 10 tomme tallerkner for at vinde spillet.
                 </p>
+            </div>
 
+
+            <div>
+                <div class="figur_grid element_grid">
+                    <h3 id="figurer_text">Figurer</h3>
+                    <img class="figurer_billede" src="assets/god_mand.webp" alt="">
+                    <img class="figurer_billede" src="assets/tabt_mand.svg" alt="">
+                    <h3 id="elementer_text">Spilelementer</h3>
+                    <img class="elementer_billede" src="assets/god.svg" alt="God element">
+                    <img class="elementer_billede" src="assets/darlig.svg" alt="Dårlig element">
+                </div>
 
             </div>
 
-            <div>
-                <h3>Valg af stil</h3>
+
+
+            <h3 class="h3_text">Valg af stil</h3>
+            <div class="styletile_02">
                 <p>Jeg valgte at benytte designstilen "flat design" til mit spil, hvor man gør brug af enkelhed og
                     flade,
                     todimensionelle elementer. Jeg blev meget inspireret af stilen fra 1920'erne og specifikt
@@ -98,57 +119,47 @@
                     såsom
                     en lysekrone og røde gardiner, der også afspejles i tjeneruniformen.
                 </p>
-            </div>
 
 
-            <div>
-                <h3>Figure</h3>
-                <div class="figur_grid element_grid">
-                    <!-- <div class="figur_grid"> -->
-                    <img src="assets/god_mand.webp" alt="">
-                    <img src="assets/tabt_mand.svg" alt="">
-
-                    <h3>spilelementer</h3>
-                    <!-- <div class="figur_grid"> -->
-                    <img src="assets/god.svg" alt="God element">
-                    <img src="assets/darlig.svg" alt="Dårlig element">
+                <div class="styletile ">
+                    <img src="assets/Styletile.webp" alt="styletile til spil">
                 </div>
 
             </div>
-            </div>
-            </div>
 
 
 
-            <div>
-                <img src="assets/Styletile.webp" alt="styletile til spil">
-            </div>
-
-            <div>
+            <div class="interview_05">
                 <h3>De forskellige spilscener</h3>
+
+            </div>
+
+            <div class="grid_skaerm">
                 <div>
                     <img src="assets/baggrund.webp" alt="Start skærm til spil">
                     <h4>Baggrundskærm</h4>
-
                 </div>
                 <div>
                     <img src="assets/level_complete.webp" alt="Level complete skærm til spil">
-                    <h4>Level complete</h4>
+                    <h4>Level complete screen</h4>
                 </div>
 
                 <div>
                     <img src="assets/game_over_screen.webp" alt="Game over skærm til spil">
-                    <h4>Game over </h4>
+                    <h4>Game over screen</h4>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="ide_prototype_text">
-                <h2>Kodning af mit spil</h2>
-            </div>
+
+        <div class="ide_prototype_text">
+            <h2>Kodning af mit spil</h2>
+        </div>
+
+        <section class="diagram">
+
             <div>
-                <h3>Aktivitetsdiagram</h3>
+                <h3 class="h3_text">Aktivitetsdiagram</h3>
 
                 <img src="assets/aktivitetsdiagram.drawio.webp" alt="Aktivitetsdiagram">
                 <p>
@@ -161,7 +172,7 @@
                 </p>
             </div>
             <div>
-                <h3>State Machine Diagram</h3>
+                <h3 class="h3_text">State Machine Diagram</h3>
 
                 <img src="assets/state_machine_diagram.webp" alt="State Machine diagram">
                 <p>Mit State Machine diagram visualiserer, ligesom mit aktivitetsdiagram, spillets proces og
