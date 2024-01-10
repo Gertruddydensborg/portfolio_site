@@ -47,7 +47,8 @@ h4 {
 
 p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.7;
   padding: 10px;
   color: white;
 }
@@ -395,19 +396,19 @@ li a:hover {
   font-size: 16px;
 }
 
-#styletile_02 h2 {
+.styletile_02 h2 {
   margin-left: 10px;
   margin-top: 40px;
   color: white;
 }
 
-#styletile_02 p {
+.styletile_02 p {
   margin-left: 10px;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-#styletile_02_img {
+.styletile_02_img {
   width: 95%;
   margin-left: 10px;
 }
@@ -758,17 +759,17 @@ p {
   color: #ffd447;
 }
 
-.research p {
-  margin-left: 12px;
-}
-
 .design_03 {
   color: white;
+  display: grid;
+}
+
+.styletile img {
+  margin: 10px;
 }
 
 .styletile {
-  width: 450px;
-  margin: 15px;
+  margin-right: 20px;
 }
 
 .design_03 h3 {
@@ -781,10 +782,30 @@ p {
   margin-top: 20px;
 }
 
-.design_03 p {
-  margin-left: 10px;
+.lighthouse_test_03 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 15px 25px;
+  padding: 20px;
 }
 
+.design_03_text {
+  order: -2;
+}
+
+#lighthouse_index_titel {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#lighthouse_spise_titel {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 /*05*/
 .mappe_grid_05 {
   display: grid;
@@ -837,6 +858,22 @@ p {
   width: 100%;
 }
 /*redesign*/
+
+#ul_05 li {
+  color: white;
+}
+
+.rnd_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.wireframes_tema05 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 /*04*/
 
@@ -899,11 +936,20 @@ p {
   justify-self: center;
 }
 
+.kodning_titel {
+  margin-bottom: 40px;
+}
 .diagram {
-  background-color: #3d4052;
+  background-color: #8c8995;
+  padding: 40px 60px;
+}
+
+.diagram p {
+  color: #000;
 }
 
 .diagram img {
-  width: 90%;
+  margin: 40px 0;
+  width: 100%;
   justify-self: center;
 }

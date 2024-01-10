@@ -267,21 +267,21 @@
     margin-top: 80px;
   }
 
-  #styletile_02 h2 {
+  .styletile_02 h3 {
     margin-left: 30px;
     margin-top: 0;
     margin-bottom: 10px;
     order: 1;
   }
 
-  #styletile_02 p {
+  .styletile_02 p {
     margin-left: 30px;
     padding: 5px;
     margin-bottom: 10px;
     order: 1;
   }
 
-  #styletile_02_img {
+  .styletile_02_img {
     width: 30%;
     margin-left: 20px;
     margin-top: 0;
@@ -429,6 +429,8 @@
   .diagram {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
     gap: 20px;
     padding: 0;
     margin: 12px -60px;
@@ -441,6 +443,42 @@
     left: 48%;
     top: -10%;
   }
+
+  .design_03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 30px;
+  }
+  .design_03_text {
+    order: 0;
+  }
+  .styletile img {
+    margin: 15px 0 0 0;
+  }
+
+  .lighthouse_test_03 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #lighthouse_index_titel {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #lighthouse_spise_titel {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  /* #wireframe_03_container {
+    padding: 15px;
+    gap: 20px;
+  } */
 }
 
 /* @media screen and (min-width: 500px) {
