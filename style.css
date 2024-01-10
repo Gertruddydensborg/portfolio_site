@@ -84,7 +84,7 @@ p {
   outline: none;
   border: none;
   z-index: 50;
-  margin: 20px 0 0 20px;
+  margin: 35px 0 0 20px;
   transition: 0s;
   border-radius: 5px;
 }
@@ -160,23 +160,22 @@ header {
   width: 100%;
   z-index: 99;
   background-color: #221b20;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  @media (min-width: 700px) {
-    .container a {
-      text-decoration: none;
-      font-size: 25px;
-    }
+@media (min-width: 700px) {
+  .container a {
+    text-decoration: none;
+    font-size: 25px;
   }
 }
 
-.nav {
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
+  .nav {
     display: none;
   }
 }
@@ -260,6 +259,11 @@ li a:hover {
   font-size: 16px;
   margin-top: 10px;
   color: black;
+  padding: 0;
+}
+
+.kontakt p {
+  padding: 0;
 }
 
 .kontakt_text p {
@@ -339,8 +343,8 @@ li a:hover {
   color: white;
 }
 
-.opgavebeskrivelse,
-.opgavebeskrivelse_02,
+.opgavebeskrivelse p,
+.opgavebeskrivelse_02 p,
 .opgavebeskrivelse_rnd p {
   margin-left: 15px;
   margin-top: 8px;
@@ -413,6 +417,11 @@ li a:hover {
   margin-left: 10px;
 }
 
+.styletile_05_img {
+  width: 100%;
+  margin-left: 15px;
+}
+
 .grid_02,
 .flex_02 h2,
 p {
@@ -473,6 +482,7 @@ p {
 
 #index_text h1 {
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .index_mappe {
@@ -612,6 +622,9 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #8c8995;
+  margin-left: -60px;
+  margin-right: -60px;
+  padding: 25px;
 }
 
 .it_logo {
@@ -666,17 +679,14 @@ p {
   line-height: 1.8;
 }
 
-/* .opgavebeskrivelse p {
-  margin-left: 35px;
-  margin-top: 8px;
-  color: white;
-  font-family: open sans;
-  font-weight: lighter;
-  color: white;
-  line-height: 1.8;
-} */
-
 .logornd {
+  width: 30%;
+  position: relative;
+  left: 65%;
+  top: 30%;
+}
+
+.title04 {
   width: 30%;
   position: relative;
   left: 65%;
@@ -846,7 +856,7 @@ p {
 }
 
 .h3_text {
-  margin-left: 25px;
+  margin-left: 10px;
   margin-top: 20px;
 }
 
@@ -861,18 +871,33 @@ p {
 
 #ul_05 li {
   color: white;
+  margin-left: 20px;
 }
 
 .rnd_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+#gammel_billede_1 {
+  justify-self: right;
+  width: 90%;
+}
+#gammel_billede_2 {
+  justify-self: left;
+  width: 90%;
+}
+.rnd_gammel_text {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .wireframes_tema05 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  padding: 15px;
 }
 
 /*04*/
@@ -952,4 +977,26 @@ p {
   margin: 40px 0;
   width: 100%;
   justify-self: center;
+}
+
+.styletile_05_rnd {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.styletile_05_img {
+  width: 95%;
+}
+
+.hover_grid_05 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 5% 0;
+  margin-top: 15px;
+}
+
+.reol {
+  width: 90%;
 }
